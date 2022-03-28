@@ -1,0 +1,310 @@
+WEBVTT
+
+00:00.210 --> 00:03.760
+Open up Crome and go to your slash check you're out.
+
+00:03.780 --> 00:08.700
+We're in the process of setting up straight to take credit card payments in the last tutorial when we
+
+00:08.700 --> 00:11.670
+feel that this form with the test card nothing happened.
+
+00:11.910 --> 00:17.620
+So go to your striped dashboard no money actually came through.
+
+00:17.650 --> 00:23.770
+We need to change the check a view to handle straight open checkout used up he y.
+
+00:23.870 --> 00:26.250
+We want to see what the forum is posting.
+
+00:26.450 --> 00:35.150
+So tight if requests method equal equal post colon and below that print request.
+
+00:35.240 --> 00:35.720
+Post
+
+00:40.360 --> 00:42.260
+once that's complete say News.com.
+
+00:42.270 --> 00:43.000
+He y.
+
+00:43.800 --> 00:44.670
+And refresh.
+
+00:44.690 --> 00:45.660
+Slash check it.
+
+00:49.770 --> 00:56.690
+Fill out the form again with the test card provided which is 4 to 4 to 4 times over and then submit
+
+00:56.690 --> 00:57.110
+payment
+
+01:00.180 --> 01:01.200
+opened up your terminal
+
+01:03.810 --> 01:11.630
+host is printed striped token and see SRF middleware token are posted.
+
+01:11.720 --> 01:16.530
+The straight token is used to securely send credit card information to Strypes servers where it's then
+
+01:16.530 --> 01:21.280
+charged we need to check a view to store the posted value of striped token.
+
+01:21.570 --> 01:25.770
+So open checkout views top Y and delete print request.
+
+01:25.800 --> 01:34.970
+Post will create a local variable we'll call this local variable token token or store the posted value
+
+01:34.970 --> 01:36.060
+of Strype token.
+
+01:36.310 --> 01:49.180
+So type token equals request that posts straight token and below that print token.
+
+01:49.250 --> 01:54.930
+Once you're done with that save views thought y and refresh flash check it.
+
+01:55.090 --> 02:00.010
+Once again you're going to want to fill out the form entering Strypes test card and submitting the payment
+
+02:02.630 --> 02:04.520
+open up your terminal.
+
+02:04.520 --> 02:07.520
+The value of token is printed.
+
+02:07.700 --> 02:14.640
+We need to add our stripe API key to setting up why so open try 10 settings stop.
+
+02:14.730 --> 02:18.970
+Why scroll right to the bottom and take the following code.
+
+02:26.300 --> 02:40.580
+Pounde Strypes stuff into 185 pound testee into 187 in 188 Strype underscore publishable underscore
+
+02:40.760 --> 02:41.150
+key
+
+02:51.050 --> 02:55.360
+under that you're going to add Strype equals secret underscore key equals
+
+03:03.550 --> 03:07.930
+skipping down to line 1 91 lb. life.
+
+03:08.010 --> 03:08.800
+Keys.
+
+03:09.390 --> 03:15.730
+Low that pound Strype underscore publishable underscore key equals
+
+03:18.390 --> 03:23.780
+and pound Strype underscore secret underscore equals which can be copied from the code above.
+
+03:23.910 --> 03:27.770
+Next go to Strype dot com and go to your dashboard.
+
+03:27.810 --> 03:32.220
+I want to point out that on the left side there is a switch for test and wife.
+
+03:32.220 --> 03:35.190
+For now we're just going to keep it on test.
+
+03:35.430 --> 03:42.350
+Click on your account then account settings and click on the API key tabs.
+
+03:42.360 --> 03:44.940
+Here are my two sets of API keys.
+
+03:45.090 --> 03:48.210
+One set for testing the other set for life.
+
+03:48.210 --> 03:53.800
+Remember if you want to you can refresh your API keys by clicking the arrows next to them.
+
+03:54.360 --> 03:59.550
+Copy each key and paste it into its corresponding variable in setting up Hiwatt
+
+04:06.210 --> 04:08.950
+will need to reference the straight keys often.
+
+04:09.110 --> 04:14.630
+If we ever have to update or straight piece will only have to paste the new keys into one spot in setting
+
+04:14.640 --> 04:15.560
+subcu wide.
+
+04:15.740 --> 04:24.770
+When you go live uncomment the life keys comment out the test keys open check out news top White before
+
+04:24.770 --> 04:26.660
+we can reference our striped keys.
+
+04:26.660 --> 04:35.280
+We need to import settings into line 1 tape from Django that Dotcom's import settings
+
+04:41.660 --> 04:52.980
+and belowdecks check requests can be found on line 7 ad published key equals settings that stripe underscore
+
+04:53.580 --> 05:02.100
+publishable underscore key.
+
+05:02.310 --> 05:08.340
+Lastly update your context variable adding publish key Colan publish keep
+
+05:18.050 --> 05:19.620
+Now that that's complete open.
+
+05:19.620 --> 05:20.840
+Check out templates.
+
+05:20.840 --> 05:27.710
+Check out that H.T. amount and replace the hardcoded key with the published key variable which is rendered
+
+05:27.710 --> 05:34.500
+through context type published key to the end of line 6
+
+05:38.830 --> 05:43.220
+open views t why we need to create another local variable.
+
+05:43.330 --> 05:52.230
+We'll call this variable secret key secret key will store our straight secret key type secret key settings
+
+05:52.500 --> 05:59.550
+that Strype underscore secret underscore key with that complete.
+
+05:59.550 --> 06:07.410
+Open up a browser window and go back to Strypes documentation from the left panel click creating charges.
+
+06:07.410 --> 06:14.290
+This page explains how to charge a customer next make sure the python tab is selected for the code example
+
+06:15.610 --> 06:19.100
+and copy striped API underscore.
+
+06:19.090 --> 06:25.210
+Keep next open checking views Tarpey why paste the copied code.
+
+06:26.290 --> 06:31.230
+Make sure that you add into line for import Strype.
+
+06:31.250 --> 06:39.290
+Next we're going to want to delete a few hard line quotes so delete secret key equals replacing it with
+
+06:39.290 --> 06:47.350
+settings dot stripe underscore secret underscore key all we've done is set straight that API underscore
+
+06:47.350 --> 06:52.460
+key equal settings but Strype underscore secret underscore key.
+
+06:52.480 --> 07:00.000
+Go back to Strypes documentation the example code sets the Strype token to a variable called token then
+
+07:00.000 --> 07:02.020
+tries to charge the customer.
+
+07:02.040 --> 07:07.910
+We already have tokin but we need the code that tries to charge the actual customer.
+
+07:08.010 --> 07:20.060
+So copy the cell code open check out NeuStar p y delete print token from line 14 and paste the copied
+
+07:20.060 --> 07:20.900
+code here.
+
+07:22.390 --> 07:26.980
+For this to work the Python code should be tabbed in as follows.
+
+07:27.980 --> 07:34.100
+Once the payment form is submitted this view will try to charge the customer if the card cannot be charged
+
+07:34.310 --> 07:35.860
+an error message will show.
+
+07:36.110 --> 07:38.550
+Save used up white.
+
+07:38.680 --> 07:41.520
+I'm going to sum up how charging a customer or stripe works.
+
+07:41.530 --> 07:43.210
+Then we'll test it out.
+
+07:43.380 --> 07:46.870
+Published he is set to my publishable underscore key
+
+07:50.370 --> 07:57.270
+Strype underscore API underscore key is set to my secret key.
+
+07:57.330 --> 08:04.470
+I set these keys in setting Sabahi why I then imported my settings into this view the publishable key
+
+08:04.680 --> 08:08.700
+and secret key is required by Strype to charge a customer.
+
+08:08.700 --> 08:12.360
+I put my publisher key into context.
+
+08:12.420 --> 08:18.810
+Context is rendered with the template out aged him out when the checkout form is submitted.
+
+08:18.960 --> 08:20.530
+The data is posted.
+
+08:20.730 --> 08:25.280
+The value of the posted Strype token is saved in a variable called token.
+
+08:25.550 --> 08:32.450
+The check of view then tries to charge a customer if the card cannot be charged and airwork will show.
+
+08:32.460 --> 08:33.540
+So let's try it out.
+
+08:34.590 --> 08:35.970
+Reflect refresh.
+
+08:35.980 --> 08:37.530
+Slash checkout.
+
+08:37.700 --> 09:00.640
+Fill out the form and submit it.
+
+09:00.660 --> 09:02.520
+There's money in my Strype account.
+
+09:02.840 --> 09:10.150
+You could charge different amounts but change in with them not equal to in the checkout view.
+
+09:10.240 --> 09:16.270
+If I change the settings to use the live keys then flip the stripe dashboard switch to life.
+
+09:16.450 --> 09:18.340
+I could start charging for real money
+
+09:22.620 --> 09:23.870
+just a little side note.
+
+09:24.030 --> 09:31.140
+If you receive an error that says authentication error Strype no longer supports API requests made with
+
+09:31.140 --> 09:32.160
+tell us one point.
+
+09:32.160 --> 09:36.730
+Oh please initiate connections with tail less 1.2 or later.
+
+09:36.900 --> 09:41.060
+It's because you were using an older version of Python or open SSL.
+
+09:41.100 --> 09:48.450
+That's why you'd get this error message so go to your L and follow the upgrade instructions for your
+
+09:48.450 --> 09:49.250
+system.
+
+09:49.290 --> 09:50.840
+Shrike will then work on your server.

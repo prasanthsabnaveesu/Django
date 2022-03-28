@@ -1,0 +1,298 @@
+WEBVTT
+
+00:02.450 --> 00:08.000
+What we ultimately want out of this project is the ability to sell product whatever that may be to do
+
+00:08.000 --> 00:08.460
+so.
+
+00:08.510 --> 00:11.180
+We're going to use Strype to accept payments.
+
+00:11.180 --> 00:21.560
+First we need to install Strype in terminal closed the server type Pipp install streite then type pit
+
+00:21.650 --> 00:22.190
+freeze
+
+00:24.930 --> 00:26.360
+Strype is now installed.
+
+00:27.350 --> 00:32.160
+Next we need to create a new app so type python managed.
+
+00:32.180 --> 00:37.620
+P Why start at Cecco and go to striped or com.
+
+00:37.780 --> 00:39.780
+First you're going to have to create an account.
+
+00:39.850 --> 00:46.210
+Once you've done that go to your main stripe dashboard from here will be able to manage our Strype account
+
+00:46.300 --> 00:47.950
+and user payments.
+
+00:47.950 --> 00:51.390
+Next open Try 10 setting Stucky why
+
+00:56.070 --> 01:05.400
+add Strype and check to installed apps save settings IPY open up check out views W-why will create a
+
+01:05.400 --> 01:16.010
+new view which will render our checkout form so open profiles used why copy log in required rate through
+
+01:16.010 --> 01:19.710
+return render next you're going to paste everything.
+
+01:19.820 --> 01:27.020
+Open profiles UDP white and copy line 1 then return to check view stop he y and pasted on line 1.
+
+01:29.190 --> 01:32.120
+Type check out after death.
+
+01:33.090 --> 01:36.050
+Then delete and check out.
+
+01:36.220 --> 01:37.920
+HTL.
+
+01:38.120 --> 01:42.500
+If the user is not logged in they will be redirected to the logon page.
+
+01:42.500 --> 01:43.870
+We need to create the template.
+
+01:43.880 --> 01:48.490
+Check out the HD MLM S.R. see Cecco.
+
+01:48.490 --> 01:51.980
+Create a new folder called templates.
+
+01:52.200 --> 01:57.110
+Then make a new file save it and check out templates as Cecco that HDMI out.
+
+01:58.400 --> 02:01.110
+Open templates profiles that aged him out.
+
+02:01.310 --> 02:03.730
+Copy all of profiles that H-G amount.
+
+02:04.010 --> 02:12.390
+Then open Cecco can aged him out paste and delete usery username user email on line 5 and 6 save.
+
+02:12.420 --> 02:14.820
+Check out our HD amount.
+
+02:14.930 --> 02:19.890
+We now need to make sure you are out for the Cecco page so open try 10 years or else stop.
+
+02:19.970 --> 02:21.570
+Why.
+
+02:21.660 --> 02:29.190
+First let's import the checkout view type into line 23 from check out import views as.
+
+02:29.200 --> 02:31.280
+Check out underscore views
+
+02:41.620 --> 02:42.940
+on line 29.
+
+02:42.940 --> 03:07.040
+Copy the profile you are out and then paste and add the necessary Cecco parameters.
+
+03:07.050 --> 03:09.710
+Once you've done that save you you are stuck.
+
+03:09.720 --> 03:14.160
+Why open up your terminal and collect your static files.
+
+03:15.030 --> 03:22.140
+Once you've done that you can open up Crome make sure that you are logged and once you are go to slash
+
+03:22.140 --> 03:29.950
+check it log in is required for this page to render will be redirected to the logon page so you can
+
+03:29.950 --> 03:34.140
+go ahead and log in now were redirected to slash.
+
+03:34.140 --> 03:36.530
+Check out the Cecco page is blank.
+
+03:38.080 --> 03:41.480
+Go to the following Strype you are el.
+
+03:41.640 --> 03:46.800
+Once you're there copy the form from the example code.
+
+03:46.880 --> 03:53.350
+Once you have that copied open check out DML and then paste the borrowed code in your content block
+
+03:53.490 --> 03:54.790
+on check out Chimo
+
+04:01.330 --> 04:03.860
+once that's complete go back to Strype dot com.
+
+04:04.810 --> 04:12.490
+Scroll down to step 1 collecting credit card information and then copy script type open profiles templates
+
+04:12.490 --> 04:21.530
+based on age TNL and then paste all of the copied code right below placed at the end of the document
+
+04:21.530 --> 04:26.540
+so the pages load faster then add a new script block with a properly marked and
+
+04:45.160 --> 04:48.980
+open check out that H.T. amount.
+
+04:49.210 --> 04:53.650
+Similarly add a new script block under extends based on amount
+
+04:58.420 --> 05:02.360
+go back to the Strype you are up still from step 1.
+
+05:02.460 --> 05:08.920
+Copy script type equals text slash javascript.
+
+05:09.100 --> 05:12.970
+Then open Cecco HMO and paste it in your new block
+
+05:17.030 --> 05:19.330
+once that's complete you can save Cecco daddy.
+
+05:20.360 --> 05:25.640
+If you're viewing Strypes documentation while Lyddon stripe changes the example code to include your
+
+05:25.640 --> 05:27.220
+API keys.
+
+05:27.410 --> 05:30.190
+This is our actual publishable key.
+
+05:30.290 --> 05:34.990
+Go to the dashboard click your account then account settings.
+
+05:35.420 --> 05:42.130
+You may be prompted to sign and click on the API keys tab to reset the API key.
+
+05:42.230 --> 05:51.080
+Click the arrows icon go back to your provided you are out and make sure that you're signed in refresh.
+
+05:51.130 --> 05:55.290
+Slash check it.
+
+05:55.370 --> 06:05.770
+We now have a credit card form open check out H.T. amount type and add C-s Areff underscore token CSIR
+
+06:05.790 --> 06:08.420
+F stands for cross site reference forgery.
+
+06:08.580 --> 06:11.990
+It prevents the other sites from submitting our site's forms.
+
+06:12.000 --> 06:14.910
+This is effectively here for the sake of security.
+
+06:14.910 --> 06:21.650
+Next we want to add some bootstrap classes to this form while centering the form inside of a row within
+
+06:21.650 --> 06:27.400
+the content block we'll be introducing divisions by adding classes to our specified division.
+
+06:27.410 --> 06:52.400
+We're maintaining that bootstrap CSSA will be properly applied.
+
+06:52.430 --> 06:57.260
+Once you've done that you can save Cecco out each DML and then refresh slash checkout.
+
+06:57.290 --> 06:59.140
+The form was looking a lot better.
+
+06:59.150 --> 07:00.260
+Hit submit payment.
+
+07:00.260 --> 07:01.670
+Nothing happens.
+
+07:01.670 --> 07:03.250
+Go back to the stripe euro.
+
+07:03.290 --> 07:06.070
+Next we're going to scroll to step 2.
+
+07:06.200 --> 07:09.010
+We need to create a single use token.
+
+07:09.380 --> 07:15.220
+Open Cecco got HDMI out at a jig Querrey block
+
+07:21.850 --> 07:26.920
+and make sure to add an end block and then paste the J-curve function in between the two
+
+07:33.700 --> 07:34.450
+once that's complete.
+
+07:34.450 --> 07:36.790
+You can save Cecco to add HDMI out.
+
+07:37.300 --> 07:40.530
+We need to load this block of a query into the base file.
+
+07:40.750 --> 07:43.150
+So open templates based but each DML
+
+07:48.020 --> 07:49.120
+and then type scripts
+
+07:53.310 --> 07:57.860
+below your last block below that add document ready.
+
+07:57.960 --> 08:24.720
+Function.
+
+08:24.730 --> 08:38.460
+This we're going to add another J query block.
+
+08:38.520 --> 08:40.530
+Don't worry too much about this J query.
+
+08:40.650 --> 08:47.070
+Just know that this is loading the J query which straight needs to work done that we can go back to
+
+08:47.070 --> 08:49.470
+stripe dot com.
+
+08:49.470 --> 08:51.560
+We need to send the form to our server.
+
+08:51.780 --> 08:53.260
+So scroll to step 3
+
+08:56.910 --> 09:01.080
+then copy the block of code provide open templates.
+
+09:01.090 --> 09:10.720
+Check him out and we're going to copy that code in just above the script tag that can be found online.
+
+09:12.320 --> 09:18.300
+Once that's complete save and refresh slash checkout on your you URL hits a submit payment again.
+
+09:18.440 --> 09:24.620
+This time we get a prompt that says could not find payment information Strypes test card number is 4
+
+09:24.620 --> 09:27.580
+to 4 to 4 times over.
+
+09:27.680 --> 09:36.530
+Then put in any three digit CVC number make up any future end date and hit submit payment.
+
+09:36.580 --> 09:39.890
+Nothing happens before Strype will take my payment.
+
+09:39.910 --> 09:43.580
+We need to set up a few more things in the next tutorial.
+
+09:43.660 --> 09:45.220
+We will continue to set up strict.
