@@ -1,0 +1,256 @@
+WEBVTT
+
+00:00.760 --> 00:06.140
+This video we're going to use Django crispy forms to make the contact form look better.
+
+00:06.260 --> 00:09.910
+This tutorial will be following the user installation guide.
+
+00:10.090 --> 00:13.420
+So go to the following Django crispy forms you are out.
+
+00:13.870 --> 00:18.380
+Go to the first installation step and copy Pipp install upgrades.
+
+00:18.400 --> 00:20.790
+Django crispy forms.
+
+00:20.830 --> 00:24.640
+Open up your terminal to install Django crispy forms.
+
+00:24.700 --> 00:27.700
+Paste this into the terminal next open.
+
+00:27.740 --> 00:29.840
+Try 10 settings IPY
+
+00:36.300 --> 00:43.880
+squirrelled to install the apps and under contact add crispy undershoot core forms.
+
+00:43.920 --> 00:45.950
+Once you're done that save settings stop.
+
+00:46.900 --> 00:48.430
+Go back to the installation guide
+
+00:51.380 --> 01:00.040
+scroll to template packs we're using the see SS frame or bootstrap 3 copy Krispy underscore template
+
+01:00.130 --> 01:11.860
+underscore pack open up setting STARKIE why and paste this at the bottom adding to it equals bootstrap
+
+01:12.200 --> 01:12.600
+3
+
+01:17.100 --> 01:18.830
+open terminal and run the server
+
+01:25.920 --> 01:26.270
+again.
+
+01:26.290 --> 01:33.140
+Open the installation guide.
+
+01:33.360 --> 01:39.600
+Scroll down to RUBINGH from Django uniform to Django crispy forms.
+
+01:39.810 --> 01:40.420
+Copy.
+
+01:40.470 --> 01:40.970
+Load.
+
+01:40.970 --> 01:41.570
+Crispy.
+
+01:41.570 --> 01:42.700
+Underscore forms.
+
+01:42.720 --> 01:47.320
+Underscore takes open contact.
+
+01:47.390 --> 01:48.220
+H-G amount.
+
+01:53.270 --> 01:59.390
+Paste what you just copied onto a line to the crispy forms tag will now be loaded.
+
+02:01.630 --> 02:04.030
+Open the installation guide again.
+
+02:04.030 --> 02:08.560
+Step 4 shows an example of applying Chris betakes by adding Krispy
+
+02:12.060 --> 02:14.150
+oping contact templates.
+
+02:14.160 --> 02:20.120
+Contact each DML and on and delete A-S underscore P-E
+
+02:23.010 --> 02:27.080
+from 110 in it's place type Krispy
+
+02:32.900 --> 02:35.540
+save and then refresh the contact page.
+
+02:43.790 --> 02:49.280
+The contact form looks way better this version of crispy form uses bootstrap 3.
+
+02:49.340 --> 02:55.740
+We can adjust the window size to see the form is now responsive.
+
+02:55.740 --> 02:57.160
+The form is too big.
+
+02:57.510 --> 03:06.080
+Let's adjust its layout go to get bootstrapped dot com slash CSSA slash pounde grid.
+
+03:06.130 --> 03:09.260
+We're going to talk about how bootstraps grid system works.
+
+03:10.180 --> 03:17.530
+First of all bootstrap works on a grid system consisting of 12 columns in each row bootstraps examples
+
+03:17.770 --> 03:22.290
+illustrate how you can divide each rows columns into different size sections.
+
+03:22.390 --> 03:26.380
+For example one row has three sections.
+
+03:26.410 --> 03:28.930
+This row is made up of three divisions.
+
+03:28.930 --> 03:31.510
+Each division has class equals.
+
+03:31.510 --> 03:40.400
+CIOL empty for the four means that each division takes up four columns of the 12 total columns available
+
+03:40.430 --> 03:48.050
+for each route because four divided by 12 equals one third each of these divisions takes up a third
+
+03:48.050 --> 03:49.610
+of the row.
+
+03:49.940 --> 03:52.750
+Bootstrap is responsive to screen size.
+
+03:52.850 --> 04:01.390
+Look at the example grid's at a specific window size the grid columns collapse into individual rows
+
+04:07.040 --> 04:16.550
+This table shows the different class prefixes available such as call them asset class prefixes change
+
+04:16.550 --> 04:20.640
+the window size the grid columns collapse and stack into rows.
+
+04:20.750 --> 04:29.210
+For example if we used column S-M for the columns at a tablet like screen size would collapse and stack
+
+04:29.240 --> 04:33.390
+into individual rows because of bootstraps responsive grid.
+
+04:33.470 --> 04:38.950
+We can create templates that work for many different screen sizes.
+
+04:39.090 --> 04:41.310
+I'm going to add a road to the project.
+
+04:41.310 --> 04:48.840
+This row will constrain the form to one section in the row four columns wide open contact on HMO and
+
+04:48.840 --> 04:56.790
+type division class equals row onto line 5 and under that on line 6 and division class equals column
+
+04:57.150 --> 05:04.980
+dash extra small dash for make sure that you add closing tags for both of your divisions.
+
+05:05.000 --> 05:09.180
+You can do this on line 17 and line 18 right under.
+
+05:09.350 --> 05:15.180
+And if make sure you save and then refresh the contact page.
+
+05:15.230 --> 05:18.170
+Now the form is a third of its previous size.
+
+05:18.180 --> 05:24.500
+Again this is because each row has 12 columns where we have constrained this form to only four columns
+
+05:25.550 --> 05:39.510
+open contact templates contact HGL and copy from division class open tag to the division closed tag.
+
+05:39.740 --> 05:50.020
+Then paste it between the two closing division tags that we established and paste that twice over save
+
+05:50.020 --> 05:52.390
+once again and refresh the contact page.
+
+05:53.570 --> 05:55.170
+There are three forms.
+
+05:55.280 --> 05:57.360
+Each form takes up a third of the row.
+
+05:57.500 --> 06:03.170
+This is because we set each division in the row to take up four columns again in Bootstrap.
+
+06:03.170 --> 06:04.740
+There are 12 columns in a row.
+
+06:05.820 --> 06:15.160
+Drag the window size smaller each column has a class of column extra small for the Prefect's exit.
+
+06:15.180 --> 06:20.210
+S means that the column in this row will never stack on top of each other.
+
+06:20.840 --> 06:22.580
+Open Contact templates.
+
+06:22.600 --> 06:24.080
+Contact him out.
+
+06:25.330 --> 06:27.790
+Replace X s with M.D
+
+06:34.960 --> 06:37.930
+save and then once again refresh your contact page.
+
+06:39.180 --> 06:45.840
+Drag the window size smaller because we change the class Prefect's to M.D the columns will now collapse
+
+06:46.260 --> 06:47.500
+on top of each other.
+
+06:47.550 --> 06:56.850
+Once the window size is less than 992 pixel the other class prefixes are listed in the same bootstrap
+
+06:56.850 --> 07:04.850
+CRID documentation I showed you earlier opened up templates contact HCM El.
+
+07:05.080 --> 07:12.430
+We're going to delete from division class equals column empty for right through the division class closing
+
+07:12.430 --> 07:13.160
+tag.
+
+07:19.490 --> 07:30.220
+Then at the end of the remaining division class and the variable which is column dash S-M dash 6 and
+
+07:30.450 --> 07:36.340
+column dash dash offset dash 3.
+
+07:36.470 --> 07:41.130
+This can be found in line 6.
+
+07:41.140 --> 07:46.520
+Now this form is six columns wide by offsetting three columns for each side of the form.
+
+07:46.600 --> 07:49.180
+We centered it in the middle of the 12 column row
+
+07:52.830 --> 07:55.800
+in this tutorial we added crispy forms to the project.
+
+07:55.800 --> 07:57.840
+We then changed the bootstrap grid system.

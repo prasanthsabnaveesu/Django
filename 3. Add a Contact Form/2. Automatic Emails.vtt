@@ -1,0 +1,160 @@
+WEBVTT
+
+00:01.110 --> 00:07.590
+Using Gmail we want the contact form to send email go to the following doc start Shango project you
+
+00:07.590 --> 00:09.800
+are out.
+
+00:09.850 --> 00:12.500
+The quick example shows the emails format.
+
+00:12.730 --> 00:20.230
+There's a subject message through the e-mails from and the recipients fails silently means that the
+
+00:20.230 --> 00:22.150
+user will not see any errors.
+
+00:22.180 --> 00:29.470
+If the email is not sent underneath the quick example code there is a list of e-mail settings.
+
+00:29.470 --> 00:36.910
+We need an e-mail underscore host email underscore port e-mail underscore host underscore user email
+
+00:36.910 --> 00:40.640
+underscore host undershorts password in the project.
+
+00:40.750 --> 00:47.200
+We need to define these email settings we're the necessary information for users to send an email through
+
+00:47.200 --> 00:49.400
+the contact form.
+
+00:49.540 --> 00:53.610
+We'll do this under SIRC Triton settings.
+
+00:53.860 --> 00:54.260
+Y
+
+00:57.110 --> 01:00.930
+And all of this information can be put in between lines.
+
+01:01.110 --> 01:03.000
+Eighteen lines 22
+
+01:18.670 --> 01:32.800
+five eighty seven is the port for G-mail.
+
+01:33.080 --> 01:34.280
+Now go back to jangles.
+
+01:34.280 --> 01:39.930
+Email documentation copy the quick example code.
+
+01:40.020 --> 01:45.470
+Then open contact the used IPY and directly paste it
+
+01:53.500 --> 02:07.730
+this view needs access to the email settings to import the settings type from Django comp import settings.
+
+02:07.730 --> 02:10.040
+Now let's define some email variables.
+
+02:12.690 --> 02:15.660
+Type subject equals blank
+
+02:25.140 --> 02:27.240
+below that do the same but with message
+
+02:31.040 --> 02:37.900
+again with email from.
+
+02:37.910 --> 02:42.200
+However with email too we will set the variable settings.
+
+02:42.410 --> 02:44.990
+Email underscore host underscore user
+
+02:55.380 --> 03:00.540
+because email to eco settings that email underscore host underscore user.
+
+03:00.540 --> 03:03.990
+For now the email will be sent to my inbox.
+
+03:04.110 --> 03:07.550
+Open contact forms that he y.
+
+03:07.710 --> 03:16.700
+The form has fields for name comment and email open contact used up y and cut form.
+
+03:16.970 --> 03:18.540
+Cleaned underscore data.
+
+03:18.610 --> 03:18.910
+Email
+
+03:21.920 --> 03:28.520
+this can be found on line 12 and paste it after e-mail from equals
+
+03:31.130 --> 03:32.240
+setting that variable
+
+03:38.360 --> 03:43.310
+e-mail from is sent to the email address the user puts into the contact form.
+
+03:43.340 --> 03:51.220
+We want the e-mails message to be sent to the comment and the name the user wants puts into the contact
+
+03:51.220 --> 03:59.010
+for first will clean the comment and name data then using string substitution will send the message
+
+03:59.190 --> 04:34.710
+to the forms comment to name.
+
+04:34.850 --> 04:37.400
+In this we'll want to set the variable for message
+
+04:55.680 --> 04:57.420
+for the email Subject.
+
+04:57.690 --> 05:03.900
+Set the variable by typing equals message from my site dot com
+
+05:09.630 --> 05:20.230
+but all the email variables into sendmail by typing subject message email from email to fail.
+
+05:20.240 --> 05:38.080
+Underscore silently equals true after sendmail.
+
+05:38.110 --> 05:40.370
+This can be placed on to line 18
+
+05:48.340 --> 05:55.330
+once that's complete say views up white Next go ahead and open up Crome below the contact form when
+
+05:55.330 --> 05:58.810
+the contact form is submitted and email is sent.
+
+05:58.810 --> 06:04.420
+You should have an email with the information from the contact form in your personal email.
+
+06:04.420 --> 06:08.850
+I just get checked mine to make sure I went through which it did.
+
+06:08.880 --> 06:16.010
+If you get an error saying s and TPA authentic error go to this you are all
+
+06:32.730 --> 06:44.220
+continue another error you may get is an email from Google saying review blocked sign and attempt.
+
+06:44.340 --> 06:46.110
+You may have to click on that email.
+
+06:46.230 --> 06:50.540
+Then click on allow access to less secure apps.
+
+06:50.610 --> 06:52.800
+Try submitting the contact form again.
+
+06:52.800 --> 06:54.120
+The email should then send.

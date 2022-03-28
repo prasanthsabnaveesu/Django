@@ -1,0 +1,223 @@
+WEBVTT
+
+00:02.430 --> 00:05.570
+Next we're going to include the bar.
+
+00:05.570 --> 00:15.640
+It's based on teaching about so go and create a new file save it in templates as now door each TNL
+
+00:20.500 --> 00:26.230
+open a storage Chimo and below the closing nav tag.
+
+00:26.350 --> 00:31.270
+Type include nav bar on each TNL
+
+00:41.720 --> 00:43.910
+that cut everything from fixed now.
+
+00:43.920 --> 00:46.700
+Bar all the way down to the closing of our TYG
+
+00:50.450 --> 00:57.590
+and paste into non-chord or HMO.
+
+00:57.650 --> 00:59.450
+We want the nav bar links to work.
+
+00:59.570 --> 01:04.130
+We'll do this by using your names to link to each individual you are up.
+
+01:04.280 --> 01:09.880
+So open your eyes to IPY and we need to make sure each year you are out as a need.
+
+01:10.370 --> 01:13.190
+So the euro for home was home.
+
+01:14.220 --> 01:21.730
+And the Eurail for ads has the name of the bet open nap or donation mail and it will use the your needs
+
+01:21.730 --> 01:24.200
+to create working links.
+
+01:24.330 --> 01:29.830
+So for the first link on my 15 euro
+
+01:35.170 --> 01:45.850
+because home is the name of the euro VERCO and then for the link type your are all about
+
+01:49.360 --> 01:54.700
+this link will now take users to the back page save all the files that have been added
+
+02:02.350 --> 02:09.750
+run the local development server and go to the project's home page because of how far is included in
+
+02:09.750 --> 02:10.410
+the base story.
+
+02:10.410 --> 02:14.310
+She about everything looks the same from the nav bar.
+
+02:14.310 --> 02:19.590
+Click on out and hope the links are working to make these pages look cleaner.
+
+02:19.590 --> 02:26.470
+We want to get rid of most of the defaults provided by the Stra bootstrap.
+
+02:26.670 --> 02:37.720
+So go back to base or Shibo and delete everything from line 55 div class page header all the way down
+
+02:37.780 --> 02:39.530
+to the closing div tab.
+
+02:40.830 --> 02:50.210
+On line 603 and delete all of that and save based on Ishmail and go ahead and refresh the whole page
+
+02:51.280 --> 02:53.690
+and the page is looking much better.
+
+02:53.710 --> 02:59.490
+We're going to put the Jumbotron into a loop lock code this block Jumbotron.
+
+03:02.020 --> 03:13.100
+Open a solution about an open and close block for Jumbotron on 45 and 46 and look at the chart and log
+
+03:17.150 --> 03:19.710
+and then go have an open home garnishee ECMO
+
+03:23.220 --> 03:27.590
+and delete this law to unblock and in it's place.
+
+03:27.640 --> 03:33.210
+Copy and block jumbotron and block in homes each.
+
+03:38.680 --> 03:46.810
+Go back to base storage shemale and cut everything from line 51 main Jumbotron to the closing DIV tag
+
+03:48.030 --> 03:53.990
+and open homebodies shemale invoke Jumbotron paste the Jumbotron each team out
+
+03:57.800 --> 04:03.720
+and go back to the home page and refresh.
+
+04:03.920 --> 04:06.230
+So we use the Jumbotron as a marketing area.
+
+04:06.440 --> 04:10.810
+You say Lawks makes the code easier to read and ensures maintainability.
+
+04:11.180 --> 04:16.010
+We're going to send the text in the Jumbotron inside a block watching us.
+
+04:16.310 --> 04:25.880
+So go back to based on a shemale and underneath lock content and lock 1:49 copied and pasted below and
+
+04:26.060 --> 04:27.140
+block content.
+
+04:27.170 --> 04:29.040
+We'll call this block styles.
+
+04:30.880 --> 04:34.950
+The block styles and paste it into Hold on each.
+
+04:42.110 --> 04:48.210
+And then inside block styles and home Dolly's symbol type style tag.
+
+04:50.530 --> 04:52.270
+And then close that style tag.
+
+04:55.430 --> 04:58.590
+And then type Jumbotron
+
+05:01.870 --> 05:03.110
+text a line
+
+05:07.320 --> 05:10.110
+co-lead center Sonicwall
+
+05:13.570 --> 05:16.310
+and this will center the text in the Jumbotron.
+
+05:17.330 --> 05:23.830
+This is inside of it Shamal style tag makes the text editor recognize this code as VSS assess the text
+
+05:23.830 --> 05:29.440
+that then one will then check the culprit see says typos to save that refresh chrome and the Jumbotron
+
+05:29.470 --> 05:33.230
+text is now centered the novel is coming together.
+
+05:33.280 --> 05:39.080
+However the Hobley is highlighted no matter what page we are all so open.
+
+05:39.160 --> 05:46.750
+Nop are dotted Shobal class equals active is what is causing the homely to be highlighted.
+
+05:46.960 --> 05:56.830
+So classical is active and save not bar on each Jammal and refresh the home page now.
+
+05:57.420 --> 06:01.640
+No link in the now or is highlighted the page users on.
+
+06:01.640 --> 06:06.360
+Should have it's not BORLING collided so backed it up hardbody shemale
+
+06:13.370 --> 06:21.550
+ortolan 15 and the Subi in between two curly brackets and 2% times.
+
+06:21.550 --> 06:27.980
+Write your owl home as home because we're going to get these links working.
+
+06:31.480 --> 06:38.690
+And then write your all about that as a patch and then on line 17
+
+06:41.510 --> 06:47.230
+next to the starting list item say for Quest path equals hole
+
+06:52.920 --> 06:54.940
+will have about class equals active
+
+07:11.710 --> 07:13.690
+and then when needed and that if statements
+
+07:23.800 --> 07:26.860
+than on line 18 will do something similar.
+
+07:28.590 --> 07:33.530
+So go ahead and call that and pasted it next to the list.
+
+07:33.550 --> 07:34.650
+Or 18.
+
+07:34.690 --> 07:42.110
+This will be if request or Poth equals about and will have that classic was active.
+
+07:42.180 --> 07:50.280
+If there are the page 15 that the euro will hold to a variable called whole line 16 sets the euro.
+
+07:50.310 --> 07:56.380
+Add it to a variable called a bet we use if requests start path to check if the current Euro is the
+
+07:56.380 --> 07:57.330
+home euro.
+
+07:57.580 --> 08:04.060
+If the current Euro path equals the path for the home euro then the user must be on the home page.
+
+08:04.060 --> 08:11.210
+The home number lake is then set to classical active if the current Euro path equals the path for the
+
+08:11.510 --> 08:12.580
+page.
+
+08:12.650 --> 08:20.430
+The upper lake will have classical active saving up are already shmo refresh the home page and click
+
+08:20.430 --> 08:22.230
+on home at about the crack.
+
+08:22.230 --> 08:24.000
+Now bar link is highlighted.
+
+08:24.000 --> 08:26.330
+Great the numbers coming together.

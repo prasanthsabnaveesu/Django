@@ -1,0 +1,277 @@
+WEBVTT
+
+00:00.880 --> 00:06.470
+Jingoes done downloading and Stalag but I'm just going to and Schertz installed correctly.
+
+00:06.730 --> 00:16.600
+Go back tiered Django tutorial page and copy Python C import and go print and go dog version paste that
+
+00:16.600 --> 00:17.980
+into your bash console.
+
+00:19.320 --> 00:20.300
+Press enter.
+
+00:20.550 --> 00:22.580
+I see one point 7.2.
+
+00:22.680 --> 00:23.860
+Therefore no change.
+
+00:23.880 --> 00:29.260
+Version 1 point 7.2 has been successfully installed into my virtual environment.
+
+00:30.850 --> 00:38.420
+I'm going to create a new Gengel project type Django dash Armento IPY start project and I'll be calling
+
+00:38.420 --> 00:40.280
+this project try and go.
+
+00:40.460 --> 00:42.360
+But you could call it whatever you like.
+
+00:42.500 --> 00:48.100
+Press enter and not just go projects being created.
+
+00:48.480 --> 00:53.120
+Open a new tab with your dashboard for this time go to files.
+
+00:54.220 --> 01:01.630
+And I could see my new Gengel project called Try Django and then there's another folder called Try Django
+
+01:03.000 --> 01:04.890
+and there's a setting stop why file in it.
+
+01:04.890 --> 01:07.780
+So click on that.
+
+01:07.790 --> 01:11.620
+The great thing about Python anywhere is that it has a built in text editor.
+
+01:11.630 --> 01:14.990
+This means you can build entire site from Python anywhere.
+
+01:15.850 --> 01:19.630
+In my studies IPY file is a few things I could change.
+
+01:19.630 --> 01:26.770
+One of them is my database escalatory but the Django tutorial recommends you use escalatory.
+
+01:27.010 --> 01:29.430
+So I'll just leave it as is for now.
+
+01:29.480 --> 01:34.480
+The other thing you can change is your time zone but I'll just leave it as is.
+
+01:34.480 --> 01:40.060
+Anytime you make changes in Python anywhere make sure you save because otherwise your changes won't
+
+01:40.060 --> 01:40.830
+come through.
+
+01:43.530 --> 01:49.410
+So if I go back to the Django tutorial I'm going to explain to you the major difference between developing
+
+01:49.410 --> 01:53.460
+on line with Python anywhere and developing on my local machine.
+
+01:54.890 --> 01:59.790
+So the major difference is don't try and run Python managed all.
+
+01:59.810 --> 02:03.670
+Why run server in future videos.
+
+02:03.670 --> 02:05.040
+I'll be running this command.
+
+02:05.050 --> 02:11.770
+Python managed shoppy Why run server but you won't have to do this with Python anywhere because your
+
+02:11.770 --> 02:17.400
+sites already live and pite on any servers aren't set up to use that command.
+
+02:17.830 --> 02:21.650
+Instead of show you what you'll do.
+
+02:21.780 --> 02:29.730
+So if you go back to the tutorial I need to create a new webapp.
+
+02:30.230 --> 02:42.070
+So I'll open a new dashboard and go to a web and I could delete this one so I'll click.
+
+02:42.080 --> 02:43.310
+I added new webapp.
+
+02:43.310 --> 02:46.080
+The one I just deleted I'd made before.
+
+02:46.190 --> 02:51.180
+Click on new webapp and click next.
+
+02:51.310 --> 02:56.890
+Then go to manual configuration and I'll be using Python 2.7.
+
+02:56.890 --> 02:58.200
+So when I click Next again
+
+03:02.630 --> 03:03.590
+there we go.
+
+03:03.620 --> 03:06.360
+Now I'm taken to the web configuration page
+
+03:09.940 --> 03:19.600
+so the next thing I need to do is configure this webpage I need to make my virtual environment path
+
+03:20.170 --> 03:25.650
+go back to the Jane go to Tauriel and copy their example path
+
+03:29.660 --> 03:33.950
+go back to the webapp configuration page and paste in that path.
+
+03:33.990 --> 03:40.720
+But instead of my username I'll paste in my real username which is Archie and then ahu that checkmark.
+
+03:40.730 --> 03:41.000
+OK.
+
+03:41.000 --> 03:42.280
+So that virtual vibrant path.
+
+03:42.290 --> 03:43.580
+That's good.
+
+03:43.580 --> 03:50.310
+The last thing I need to do before this Django project is up and running is configure my WSG file.
+
+03:50.510 --> 03:54.390
+So click on your file and will be using Django.
+
+03:54.460 --> 04:00.040
+So that's the only one I really need so I could delete everything from 9:52 flask all the way down the
+
+04:00.250 --> 04:07.370
+line 115 and then I could also delete everything on top and go just to clean it up a little bit.
+
+04:09.300 --> 04:11.630
+And then I'll start on coalmining what I need.
+
+04:11.670 --> 04:17.310
+So in Calment in port OS in port s y s o uncomment this path
+
+04:20.610 --> 04:27.970
+everything with the one hash is where any in a comment and then I'll be using Django 1.7.
+
+04:28.140 --> 04:37.180
+So of uncomment that one here and now on.
+
+04:37.330 --> 04:47.090
+And the last oh you click save but the last thing I need to do is change my path because as you see
+
+04:47.090 --> 04:52.090
+here they're assuming it's going to home nurturing my site saying Stop white.
+
+04:52.400 --> 04:57.930
+But as I showed you before it's actually going to home nurture.
+
+04:57.960 --> 05:00.710
+Try Django try Django sending stuff he y.
+
+05:02.520 --> 05:03.940
+So I'll change that.
+
+05:05.790 --> 05:07.300
+And where did you change that.
+
+05:07.400 --> 05:08.200
+It's here.
+
+05:09.250 --> 05:17.690
+So try Shingo Stosh try and go
+
+05:20.790 --> 05:23.200
+and then connected the settings file.
+
+05:23.500 --> 05:25.150
+Oh we all need one.
+
+05:26.960 --> 05:35.460
+Because the other one goes down here charging go toward settings so have it set up just like this.
+
+05:35.710 --> 05:39.690
+Click save.
+
+05:39.920 --> 05:42.150
+And once it saves it should be ready to go.
+
+05:43.530 --> 05:44.710
+Just make sure there's no problems.
+
+05:44.730 --> 05:45.100
+OK.
+
+05:45.120 --> 05:46.150
+Looking good.
+
+05:46.200 --> 05:49.230
+Hardly any problems if there were.
+
+05:49.280 --> 05:58.290
+So if I go back to my dashboard back to the Web tab and this is a very important thing whenever you
+
+05:58.290 --> 06:03.790
+make a change on pite on anywhere wherever you change a file save a new file and you want to see the
+
+06:03.790 --> 06:04.920
+changes come through.
+
+06:05.100 --> 06:06.850
+You have to reload your site.
+
+06:07.230 --> 06:10.020
+So click this big green button and let it reload.
+
+06:12.260 --> 06:18.650
+And then once it's done I can follow this link and I'll see that my Gengel project is up and running.
+
+06:18.650 --> 06:19.390
+There you go.
+
+06:19.400 --> 06:20.470
+It worked.
+
+06:20.480 --> 06:23.630
+Congratulations on your first Django card page.
+
+06:23.810 --> 06:28.750
+Now that you have jingoes set up and working on Python anywhere you're ready to follow me step by step
+
+06:29.000 --> 06:32.220
+as I build and launch a site that accepts payments with.
+
+06:32.810 --> 06:35.340
+Thank you for joining me in the next one.
+
+06:35.420 --> 06:40.810
+One quick thing to note if you're going to be using a free Python anywhere account to take this course.
+
+06:41.090 --> 06:46.730
+Everything in this course will work perfectly on a free Python anywhere account except using striped
+
+06:47.660 --> 06:53.990
+Python anywhere has a policy where Strype API calls will not go through unless you pay for at least
+
+06:53.990 --> 06:56.100
+a $5 amount plan.
+
+06:56.150 --> 07:01.610
+I guess their belief is that if you're going to be making money they want a little bit of money as well.
+
+07:01.610 --> 07:07.590
+I really apologize that the strike portion won't work on the free account but everything else will work.
+
+07:07.700 --> 07:12.690
+And if you fall along with me you'll have all the skills you need to accept payments with.
+
+07:12.800 --> 07:14.600
+When the time being comes that you need to.

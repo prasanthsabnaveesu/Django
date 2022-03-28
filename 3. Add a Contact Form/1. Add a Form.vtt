@@ -1,0 +1,307 @@
+WEBVTT
+
+00:02.100 --> 00:06.340
+We're now going to create a contact page First we need to create a new app.
+
+00:06.420 --> 00:11.850
+So open your terminal and type python managed IPY start app contact
+
+00:17.990 --> 00:27.310
+next open tried 10 settings stop you like and add the app titled contact to install installed apps by
+
+00:27.320 --> 00:40.870
+typing contact next open tried 10 you are elist up y into line 21 type from profile's import views as
+
+00:40.880 --> 00:51.400
+profile underscore views and then Line 22 ad from contact import views as contact underscore views introduce
+
+00:51.400 --> 00:55.710
+profile underscore views and contact underscore views to the appropriate you are Ellich
+
+01:03.200 --> 01:06.650
+will do this by adjusting for contact in line 28
+
+01:16.820 --> 01:21.940
+euro for the contact page is slash contact when the user goes to slash contact.
+
+01:21.940 --> 01:27.090
+A request will be sent to a view in the contact app of course called contact.
+
+01:27.140 --> 01:29.800
+You are L is also in contact.
+
+01:29.800 --> 01:31.730
+We need to create the contact view.
+
+01:32.140 --> 01:40.990
+Open contacts views P Y and into line for type def contact request.
+
+01:41.660 --> 01:48.010
+Below that context equals locals below that template equals contact.
+
+01:48.140 --> 01:58.100
+H DML on the final line return render request template context create a folder in SIRC contact and call
+
+01:58.100 --> 01:59.190
+it templates.
+
+02:02.450 --> 02:08.510
+In templates save a new file as contact that H-G amount once that's complete.
+
+02:08.520 --> 02:10.560
+Open Contact HMO
+
+02:20.380 --> 02:21.280
+in your first line.
+
+02:22.470 --> 02:31.930
+Type extends based on HMO and then line 3 to 5 will be introducing a new content content block.
+
+02:33.040 --> 02:36.200
+With the header contact between
+
+02:40.120 --> 02:41.860
+open nav bar HMO
+
+02:44.600 --> 02:49.040
+and we're going to adjust for Euro con tact as contact
+
+02:55.460 --> 02:56.910
+on to line 17.
+
+03:12.470 --> 03:24.930
+Equally be doing this on line 21.
+
+03:25.040 --> 03:27.200
+Now that you've finished that save everything.
+
+03:27.320 --> 03:29.500
+Open up the terminal and run Python.
+
+03:29.530 --> 03:30.120
+Manager.
+
+03:30.140 --> 03:31.790
+P Why collect static
+
+03:38.040 --> 03:44.900
+run the server and go to the project's home page.
+
+03:44.960 --> 03:51.340
+Click on contact the contact pages despite contact is also highlighted on the nav bar.
+
+03:51.460 --> 03:57.670
+Now that the contact page is working we're going to make a contact form go to the following Django project
+
+03:57.670 --> 04:03.810
+link this page explains the different types of Django form fields we'll be using some of these fields
+
+04:03.810 --> 04:09.230
+when we make the contact form to create the contact form first open a new file.
+
+04:13.330 --> 04:17.510
+We're going to save this file in C contact as forms.
+
+04:17.680 --> 04:18.030
+White
+
+04:21.150 --> 04:29.830
+open forum stop P Y and in the first line type from Django import forms and then on line three class
+
+04:29.830 --> 04:33.710
+contact form forms dot form.
+
+04:33.710 --> 04:38.260
+We've defined a new form called Contact form but you can call it whatever you'd like.
+
+04:38.600 --> 04:41.000
+Django handles the forms validation.
+
+04:41.090 --> 04:43.520
+We're going to create a few form fields
+
+04:46.510 --> 04:49.770
+into line for type name equals forms
+
+04:52.840 --> 05:00.570
+care fields required equals false Max underscore length equals 100
+
+05:08.160 --> 05:12.330
+help underscore text equals 100 characters Max
+
+05:21.310 --> 05:22.370
+on the line below.
+
+05:22.600 --> 05:32.670
+Add email equals forms dot email field and in brackets required equals true
+
+05:35.950 --> 05:37.350
+Leslie on line 6.
+
+05:37.440 --> 05:45.480
+Add comment equals forms dot care field and in brackets required equals true
+
+05:50.380 --> 05:52.180
+go to the following Django project.
+
+05:52.180 --> 05:54.630
+You are l the right panel.
+
+05:54.640 --> 05:59.310
+List the different types of form which is available from the first example on this page.
+
+05:59.350 --> 06:05.520
+We're going to use the textarea widget copy widget equals forms that textarea
+
+06:08.390 --> 06:10.060
+open contact forms.
+
+06:10.090 --> 06:10.670
+P Why
+
+06:13.200 --> 06:16.200
+inside the comment care field.
+
+06:17.140 --> 06:20.340
+Paste what you copied from the Django you are el
+
+06:24.600 --> 06:24.960
+next.
+
+06:25.020 --> 06:33.970
+Open Contact views top White the contact form needs to be imported into the view so type from that forms.
+
+06:34.080 --> 06:37.170
+Import contact form into line 3
+
+06:40.470 --> 06:49.940
+next the view needs to handle the contact form so under def contact request type form equals contact
+
+06:49.940 --> 06:54.380
+form and in brackets request post or none.
+
+07:07.090 --> 07:09.580
+On July 9 add if form is valid
+
+07:16.530 --> 07:21.850
+and lastly on line 10 and print request post
+
+07:25.180 --> 07:30.850
+if there is post data and if the form is valid the post out will be printed in the terminal.
+
+07:30.850 --> 07:33.470
+Django handles the forms validation.
+
+07:33.570 --> 07:36.860
+The form is rendered through the views context.
+
+07:37.510 --> 07:38.670
+Open templates.
+
+07:38.740 --> 07:40.810
+Contact that HMO.
+
+07:43.700 --> 07:47.400
+And under your contact header add the following lines of text
+
+07:53.060 --> 07:56.850
+a line 6 AD form method equals post
+
+07:59.940 --> 08:02.230
+action Nichol's
+
+08:40.390 --> 08:41.150
+line.
+
+08:41.290 --> 08:47.770
+You'll be adding input type equals submit value equals submit form.
+
+08:47.770 --> 08:51.640
+Class equals ETN ETN Dashti full
+
+09:15.610 --> 09:18.220
+because it is considered the best practice.
+
+09:18.220 --> 09:21.300
+We put the form inside of an HMO form.
+
+09:22.370 --> 09:23.810
+Method equals post.
+
+09:23.810 --> 09:29.690
+Means that this form is sending post-edit whatever you are action equals is thing you are or else that
+
+09:29.690 --> 09:36.380
+this form will be 1:53 will leave actioned blank because we want this form to be submitted to the contact
+
+09:36.380 --> 09:36.970
+you are.
+
+09:37.220 --> 09:40.590
+And this form is already at the contact euro.
+
+09:40.750 --> 09:47.850
+The C o S R F underscore token prevents cross-site forgery.
+
+09:47.860 --> 09:53.370
+All we really need to know is that the C S R F token as required by Django.
+
+09:53.380 --> 09:56.040
+It makes the form more secure.
+
+09:56.040 --> 10:04.320
+The form is displayed as a paragraph paragraph is a builtin method that renders the form as an aged
+
+10:04.320 --> 10:05.780
+him paragraph.
+
+10:06.090 --> 10:12.290
+Save everything and go to the contact page.
+
+10:12.480 --> 10:14.980
+The contact form is now displayed.
+
+10:15.230 --> 10:18.770
+Will eventually use bootstrap to make this form look better.
+
+10:18.960 --> 10:19.700
+Test the form out
+
+10:30.040 --> 10:33.640
+leave the form itself blank and hit submit form
+
+10:37.020 --> 10:40.870
+the form doesn't submit and we're told which fields are required.
+
+10:43.500 --> 10:49.770
+Enter an invalid email and submit the form an error message appears.
+
+10:49.770 --> 10:57.410
+The message says that the email address is not valid and that we must fill in the required fields put
+
+10:57.420 --> 11:00.290
+in a valid email address and then hit submit
+
+11:10.580 --> 11:12.650
+open up your terminal.
+
+11:12.690 --> 11:15.190
+The post data has been printed.
+
+11:15.240 --> 11:21.360
+The post consists of a name email comment and C S or a token
+
+11:24.720 --> 11:26.510
+open contact used up.
+
+11:26.510 --> 11:26.950
+He y
+
+11:30.610 --> 11:32.530
+type in print form.
+
+11:32.620 --> 12:03.940
+Cleaned underscore data email into line 10.
+
+12:03.980 --> 12:07.090
+Now the posted email address is more neatly displayed.

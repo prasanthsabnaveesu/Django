@@ -1,0 +1,229 @@
+WEBVTT
+
+00:00.490 --> 00:02.920
+In this tutorial we're going to work on the contact.
+
+00:02.930 --> 00:06.040
+These contacts open up contact views.
+
+00:06.230 --> 00:21.340
+Y under def contact request type title equals contac.
+
+00:21.490 --> 00:30.610
+Next you can go ahead and delete contacts contacts equals locals or make my context equal to dictionary
+
+00:30.890 --> 00:31.860
+dictionaries.
+
+00:31.960 --> 00:39.030
+Use the key value pairs a key value pair is defined as a set of two linked data items.
+
+00:39.100 --> 00:46.120
+A key which is a unique identifier for some item of data and the value which is either the data that
+
+00:46.210 --> 00:49.600
+is identified or a pointer to the location of the data
+
+00:52.530 --> 01:01.620
+under form equals contact form type context equals title title form form
+
+01:10.670 --> 01:12.660
+once that's complete save.
+
+01:12.670 --> 01:14.090
+Views y.
+
+01:14.720 --> 01:16.440
+Next open templates.
+
+01:16.470 --> 01:24.470
+Contact that HGL will want to change the header tag adding title
+
+01:32.500 --> 01:39.820
+once that's complete saved contact HMO and open up the browser refresh the contact page.
+
+01:41.390 --> 01:46.510
+From the title and the contact form is still rendered open contact.
+
+01:46.530 --> 01:52.000
+NEWS.COM why and delete form and form
+
+01:55.590 --> 02:02.560
+from the end of line 11 saved used up y and refresh the contact page.
+
+02:04.400 --> 02:08.980
+The form does not come through the submit button is still there.
+
+02:08.990 --> 02:15.070
+Go back in views that P Y and undo the delete and save.
+
+02:15.100 --> 02:20.930
+I just wanted to illustrate that for context you don't have to use locals.
+
+02:21.010 --> 02:25.530
+You can use a dictionary to specify the context to be rendered.
+
+02:25.660 --> 02:30.860
+Next open contact HVM out if the form is not rendered.
+
+02:30.860 --> 02:32.980
+The submit button should not be displayed.
+
+02:34.060 --> 02:39.990
+If for an end around the form open and closed tag
+
+02:51.460 --> 02:53.060
+open contact used up.
+
+02:53.100 --> 03:04.550
+Why and delete form and form as we did earlier save News.com P Y and refresh the contact page yet again.
+
+03:04.590 --> 03:08.720
+Now the form and the button do not come through the if statement worked.
+
+03:08.730 --> 03:14.890
+Go back into view stop and undo the delete and save when the user submits the form.
+
+03:15.000 --> 03:16.840
+We want to send the message.
+
+03:16.980 --> 03:20.980
+Will create a variable called Cf. underscore message.
+
+03:23.980 --> 03:29.280
+So under the send underscore mail line type title equals.
+
+03:29.350 --> 03:29.860
+Thanks
+
+03:33.600 --> 03:39.900
+and on the line below that I'd confirm underscore message equals.
+
+03:39.960 --> 03:41.800
+Thanks for the message.
+
+03:41.970 --> 03:51.170
+We will get right back to you.
+
+03:51.300 --> 03:53.970
+Next we're going to make another context.
+
+03:54.000 --> 03:58.040
+This context will only be rendered once the form has been validated.
+
+03:59.580 --> 04:12.680
+So type context equals title title confirm underscore message confirmed message this can be found online
+
+04:12.680 --> 04:13.310
+23
+
+04:16.180 --> 04:23.970
+open contact on HGL if the form has been validated confirmed message and the title will be rendered
+
+04:24.270 --> 04:28.450
+with the news context if confirmed message has been rendered.
+
+04:28.520 --> 04:36.090
+We want confirmed underscore a message to be displayed and if confirmed underscore message and if
+
+05:11.870 --> 05:17.730
+safe contact HMO go ahead and refresh Krome.
+
+05:17.950 --> 05:19.620
+Now you can fill out the contact form
+
+05:22.950 --> 05:26.480
+once that's complete submit the form
+
+05:30.760 --> 05:32.320
+once the form is validated.
+
+05:32.470 --> 05:37.600
+The context changes confirm message and the new title is displayed.
+
+05:38.900 --> 05:45.530
+Refresh the contact page.
+
+05:45.730 --> 05:47.690
+The contact form is displayed again.
+
+05:48.010 --> 05:49.150
+Open Contact.
+
+05:49.270 --> 05:49.830
+NEWS.COM.
+
+05:49.840 --> 05:50.530
+He y.
+
+05:52.100 --> 05:56.150
+We want to move this context out of the if statement.
+
+05:56.500 --> 06:02.510
+Cut context equals title and pasted below an ad for
+
+06:15.120 --> 06:24.280
+next we can go and delete context equals title title form form from line 11.
+
+06:24.290 --> 06:27.580
+Now we want to go and type confirm underscore message.
+
+06:27.710 --> 06:29.090
+Equals none.
+
+06:29.390 --> 06:30.280
+In it's place.
+
+06:34.790 --> 06:43.750
+Following that we will add form equals none into line 23 before the form is submitted.
+
+06:43.750 --> 06:44.240
+Confirm.
+
+06:44.260 --> 06:45.910
+Underscore message equals none.
+
+06:46.180 --> 06:54.610
+When the form is posted and the data is valid form equals none the context renders title form and confirm
+
+06:54.610 --> 06:56.010
+underscore message.
+
+06:56.020 --> 07:01.050
+The template will then display whatever context is rendered saved News.com News.com.
+
+07:01.480 --> 07:04.850
+Refresh the home page and you can go fill out the contact form.
+
+07:12.100 --> 07:15.110
+Submit the form and then refresh contact
+
+07:18.730 --> 07:19.440
+contact.
+
+07:19.480 --> 07:26.790
+HMO displays the appropriate context on contact open profiles used IPY
+
+07:31.520 --> 07:36.160
+and on your contex line delete equals local's equally.
+
+07:36.410 --> 07:44.740
+Remove this below on line 10 and locals place will put an empty dictionary
+
+07:47.810 --> 07:50.940
+local's puts everything in each view is the context.
+
+07:50.960 --> 07:55.440
+This lack of specificity is a major drawback to using locals.
+
+07:55.460 --> 08:03.510
+That's why in this video I showed you how to hard code the views contex save profiles used up y and
+
+08:03.520 --> 08:04.240
+refresh Krumm
+
+08:09.630 --> 08:16.570
+because the home and about page don't have any context to display the empty dictionary does not affect
+
+08:16.570 --> 08:16.960
+them.
